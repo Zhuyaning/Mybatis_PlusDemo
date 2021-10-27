@@ -1,5 +1,8 @@
 package com.zhu.mybatis_plusdemo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /***
  *   Created by IntelliJ IDEA.
  *   User: ZhuYaning
@@ -24,6 +27,16 @@ public class OperatorTest {
         circle.setRadius(5);
         Double area = circle.getCircularArea();
         System.out.println(area);
+
+        List<String> stringList = new ArrayList<>();
+        Integer pri = pri(stringList);
+        System.out.println(stringList);
+    }
+
+
+    public static Integer pri(List<String> v){
+        v.add("zyn");
+        return null;
     }
 }
 
